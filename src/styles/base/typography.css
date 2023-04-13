@@ -1,0 +1,30 @@
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.heading-xl {
+  font-size: 3.25rem;
+}
+
+.featured {
+  font-size: 1.75rem;
+}
+
+@media (min-width: 720px) {
+  .heading-xl {
+    font-size: 3.25rem;
+  }
+}

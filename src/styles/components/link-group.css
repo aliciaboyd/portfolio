@@ -1,0 +1,28 @@
+.link-group {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--white);
+}
+
+.link-group h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.link-group > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 720px) {
+  .link-group > div {
+    flex-direction: row;
+  }
+
+  .link-group h2 {
+    text-align: left;
+  }
+}

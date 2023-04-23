@@ -1,0 +1,85 @@
+.link-primary {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--link-blue);
+  text-decoration: none;
+  position: relative;
+  white-space: nowrap;
+}
+
+.link-primary,
+.link-white,
+.link-blue {
+  transition: 150ms ease-in;
+}
+
+.link-primary::after {
+  content: url(../../assets/arrow.svg);
+  position: relative;
+  right: -5px;
+}
+
+.link-blue::after {
+  content: url(../../assets/arrow-sm.svg);
+  position: relative;
+  right: -5px;
+}
+
+.link-white {
+  color: var(--white);
+}
+
+.link-white::after {
+  content: url(../../assets/arrow-white.svg);
+  position: relative;
+  right: -5px;
+}
+
+.link-blue {
+  color: var(--link-blue);
+}
+
+.link-white,
+.link-blue {
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: 100ms ease-in;
+}
+
+.link-primary:hover,
+.link-white:hover,
+.link-blue:hover {
+  opacity: 0.75;
+}
+
+.btn-primary {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--link-blue);
+  border: 1.5px solid var(--link-blue);
+  border-radius: 2rem;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.btn-primary::after {
+  content: url(../../assets/arrow-white.svg);
+  position: relative;
+  right: -5px;
+}
+
+@media (min-width: 720px) {
+  .btn-primary {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .link-primary {
+    font-size: 1.5rem;
+  }
+}

@@ -1,7 +1,10 @@
 :root {
   --background: #ece1de;
+  --white-transparent: #ffffff25;
+  --white: #ffffff;
   --text-primary: #2f324e;
   --text-secondary: #40414e;
+  --link-blue: #2d40e8;
 
   font-family: "Outfit", system-ui, sans-serif;
   color: var(--text-primary);

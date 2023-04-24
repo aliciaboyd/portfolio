@@ -1,0 +1,52 @@
+.casestudy h1 {
+  max-width: 26ch;
+  margin-block: 100px 50px;
+}
+
+.casestudy p {
+  max-width: 65ch;
+}
+
+.casestudy-info {
+  border-radius: 0.5rem;
+  border: 1.5px solid var(--white);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-block: 50px;
+}
+
+.casestudy-info a {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.img-site-preview {
+  width: 100%;
+  max-width: 1280px;
+  /* height: 600px; */
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 1.5px solid var(--white);
+  margin-block: 1rem;
+}
+
+.img-full-width {
+  width: 100%;
+  max-width: 1280px;
+  /* height: 600px; */
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 1.5px solid var(--white);
+  margin-block: 1rem;
+}
+
+.align-center {
+  text-align: center;
+}
+
+@media (min-width: 720px) {
+  .casestudy-info {
+    grid-template-columns: 1fr 2fr;
+  }
+}

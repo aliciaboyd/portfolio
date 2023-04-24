@@ -54,7 +54,7 @@ export default function About(props) {
               </span>
             </div>
             <div>
-              <h3>My developmnet technologies</h3>
+              <h3>My development technologies</h3>
               <ul className="skill-bubbles">
                 <li>HTML/CSS</li>
                 <li>Javascript</li>

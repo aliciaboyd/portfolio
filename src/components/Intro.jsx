@@ -21,7 +21,7 @@ export default function Intro() {
         </p>
 
         <div className="intro-skills">
-          <h3>My developmnet stack</h3>
+          <h3>My development stack</h3>
           <ul className="skill-bubbles">
             <li>HTML/CSS</li>
             <li>Javascript</li>

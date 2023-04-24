@@ -37,6 +37,7 @@ export default function Home(props) {
             demo="https://monthly-budgettracker.netlify.app/"
           />
           <FeaturedProject
+            casestudy="brewell"
             title="Branding, packaging and landing page for a tea company concept."
             bgColor="#1F4128"
             bgImage="src/assets/feature1-desktop.jpg"

@@ -15,7 +15,7 @@ export default function FeaturedProject(props) {
       }}
     >
       <div>
-        <p class="feature-title">{props.title}</p>
+        <p className="feature-title">{props.title}</p>
         {/* <Link to={`/featured/${props.url}`}>Case study</Link> */}
         <a
           className="link-white"

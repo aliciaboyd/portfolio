@@ -1,3 +1,12 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
 .main-nav {
   border-bottom: 1px solid var(--white);
 }
@@ -16,8 +25,8 @@
   list-style: none;
 }
 
-.main-nav li:not(:last-child) {
-  margin-right: 2rem;
+.main-nav .links {
+  display: none;
 }
 
 .main-nav li a {
@@ -32,27 +41,102 @@
 
 .logo {
   color: var(--text-primary);
+  text-decoration: none;
   font-weight: 600;
   font-size: 18px;
   letter-spacing: -0.25px;
+  transition: 150ms ease-in-out;
 }
 
-.main-nav .internal-links {
-  position: absolute;
+.logo:hover {
+  color: var(--link-blue);
+}
+
+.menu-btn {
+  padding: 0.5rem 1rem;
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  z-index: 10;
+  border: 1.5px solid var(--text-primary);
+  color: var(--text-primary);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  background-color: var(--background);
+  transition: 200ms ease-in-out;
+  z-index: 15;
+}
+
+.menu-btn:hover {
+  cursor: pointer;
+  border: 1.5px solid var(--link-blue);
+  color: var(--link-blue);
+}
+
+.mobile-links {
+  position: fixed;
+  top: 0;
   left: 0;
-  right: 0;
-  margin: auto;
-  top: 0.75rem;
-  width: 250px;
   display: flex;
   justify-content: center;
-  background-color: var(--white-transparent);
-  border: 1px solid var(--white);
-  padding: 0.5rem 2rem;
-  border-radius: 2rem;
+  align-items: center;
+  background-color: var(--link-blue);
+
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  font-size: 2rem;
+  animation: fadeIn 300ms ease-in-out both;
+}
+
+.mobile-links ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-links ul li {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.mobile-links a {
+  color: var(--background) !important;
+}
+
+.mobile-links a:hover {
+  color: var(--text-primary) !important;
 }
 
 @media (min-width: 720px) {
+  .menu-btn,
+  .mobile-links {
+    display: none;
+    visibility: hidden;
+  }
+
+  .main-nav .links {
+    display: block;
+  }
+
+  .main-nav .internal-links {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0.75rem;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--white-transparent);
+    border: 1px solid var(--white);
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+  }
+
   .main-nav li:not(:last-child) {
     margin-right: 2rem;
   }

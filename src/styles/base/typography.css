@@ -6,7 +6,7 @@ h4 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -26,7 +26,7 @@ h3 {
 }
 
 .heading-xl {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 2.75rem;
   max-width: 25ch;
   letter-spacing: -1px;
@@ -46,6 +46,11 @@ p {
     line-height: 3.5rem;
     max-width: 20ch;
     padding-inline: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 500;
   }
 
   h2 {

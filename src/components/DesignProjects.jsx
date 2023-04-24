@@ -1,4 +1,10 @@
 import { Link } from "react-router-dom";
+import designImg1 from "/src/assets/project-images/dw-1.jpg";
+import designImg2 from "/src/assets/project-images/dw-2.jpg";
+import designImg3 from "/src/assets/project-images/dw-3.jpg";
+import designImg4 from "/src/assets/project-images/dw-4.jpg";
+import designImg5 from "/src/assets/project-images/dw-5.jpg";
+import designImg6 from "/src/assets/project-images/dw-6.jpg";
 
 export default function DesignProjects() {
   return (
@@ -8,27 +14,27 @@ export default function DesignProjects() {
 
       <div className="three-col-sm">
         <img
-          src="src/assets/project-images/dw-1.jpg"
+          src={designImg1}
           alt="Design of a login page"
         />
         <img
-          src="src/assets/project-images/dw-2.jpg"
+          src={designImg2}
           alt="Landing page design for a financial company"
         />
         <img
-          src="src/assets/project-images/dw-3.jpg"
+          src={designImg3}
           alt="Stationary design example of a letterhead, folder and business card"
         />
         <img
-          src="src/assets/project-images/dw-4.jpg"
+          src={designImg4}
           alt="Logo for a personal finance blog"
         />
         <img
-          src="src/assets/project-images/dw-5.jpg"
+          src={designImg5}
           alt="Design of a login page"
         />
         <img
-          src="src/assets/project-images/dw-6.jpg"
+          src={designImg6}
           alt="Design of a login page"
         />
       </div>

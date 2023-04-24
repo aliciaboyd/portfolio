@@ -77,7 +77,7 @@ export default function About(props) {
       </FadeIn>
 
       <FadeIn>
-        <section className="work-history container">
+        <section className="work-history">
           <h2>Work History</h2>
           <WorkItem
             bgColor="#002949"

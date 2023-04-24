@@ -4,6 +4,8 @@ import Intro from "../components/Intro";
 import DevProjects from "../components/DevProjects";
 import DesignProjects from "../components/DesignProjects";
 import FadeIn from "../components/FadeIn";
+import FeaturedBg1 from "/src/assets/feature1-desktop.jpg";
+import FeaturedBg2 from "/src/assets/feature2-desktop.jpg";
 
 export default function Home(props) {
   return (
@@ -32,7 +34,7 @@ export default function Home(props) {
           <FeaturedProject
             title="A monthly budget planner and expense tracker built in React."
             bgColor="#003C8F"
-            bgImage="src/assets/feature2-desktop.jpg"
+            bgImage={FeaturedBg2}
             github="https://github.com/aliciaboyd/budget-planner"
             demo="https://monthly-budgettracker.netlify.app/"
           />
@@ -40,7 +42,7 @@ export default function Home(props) {
             casestudy="brewell"
             title="Branding, packaging and landing page for a tea company concept."
             bgColor="#1F4128"
-            bgImage="src/assets/feature1-desktop.jpg"
+            bgImage={FeaturedBg1}
             github="https://github.com/aliciaboyd/brewell"
             demo="https://aliciaboyd.github.io/brewell/"
           />

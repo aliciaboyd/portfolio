@@ -1,5 +1,5 @@
 .bg {
-  background: url(src/assets/bg-light.png);
+  background: url(/src/assets/bg-light.png);
   min-height: 100vh;
 }
 

@@ -1,6 +1,12 @@
 import CaseStudy from "./CaseStudy";
 import FadeIn from "../components/FadeIn";
 import WebsitePreviewImg from "../components/WebsitePreviewImg";
+import BrewellSite from "/src/assets/project-images/Brewell-HeroPreview.jpg";
+import Brewell1 from "/src/assets/project-images/Brewell-Presentation-01.jpg";
+import Brewell2 from "/src/assets/project-images/Brewell-Presentation_logos.jpg";
+import Brewell3 from "/src/assets/project-images/Brewell-Presentation_bags.jpg";
+import Brewell4 from "/src/assets/project-images/Brewell-Presentation_floating.jpg";
+import Brewell5 from "/src/assets/project-images/Brewell-Presentation-05.jpg";
 
 export default function Brewell() {
   return (
@@ -18,37 +24,37 @@ export default function Brewell() {
     >
       <FadeIn>
         <WebsitePreviewImg>
-          <img src="/src/assets/project-images/Brewell-HeroPreview.jpg" />
+          <img src={BrewellSite}/>
         </WebsitePreviewImg>
       </FadeIn>
       <FadeIn>
         <img
           className="img-full-width"
-          src="/src/assets/project-images/Brewell-Presentation-01.jpg"
+          src={Brewell1}
         />
       </FadeIn>
       <FadeIn>
         <img
           className="img-full-width"
-          src="/src/assets/project-images/Brewell-Presentation_logos.jpg"
+          src={Brewell2}
         />
       </FadeIn>
       <FadeIn>
         <img
           className="img-full-width"
-          src="/src/assets/project-images/Brewell-Presentation_bags.jpg"
+          src={Brewell3}
         />
       </FadeIn>
       <FadeIn>
         <img
           className="img-full-width"
-          src="/src/assets/project-images/Brewell-Presentation_floating.jpg"
+          src={Brewell4}
         />
       </FadeIn>
       <FadeIn>
         <img
           className="img-full-width"
-          src="/src/assets/project-images/Brewell-Presentation-05.jpg"
+          src={Brewell5}
         />
       </FadeIn>
     </CaseStudy>

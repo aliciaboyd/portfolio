@@ -24,7 +24,7 @@
 
 .homepage-hero span {
   margin-bottom: 0.5rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .intro,
@@ -87,19 +87,23 @@ section {
   .homepage-hero::after {
     content: "";
     position: absolute;
-    width: 15vw;
+    width: calc(10vw - 30px);
     height: 100%;
     min-height: 80vh;
     height: 600px;
-    border: 1.5px solid var(--white);
-    border-radius: 1rem;
+    border-top: 1.5px solid var(--white);
+    border-bottom: 1.5px solid var(--white);
   }
 
   .homepage-hero::before {
-    left: calc(-5vw - 30px);
+    border-radius: 0 1rem 1rem 0;
+    border-right: 1.5px solid var(--white);
+    left: 0;
   }
   .homepage-hero::after {
-    right: calc(-5vw - 30px);
+    border-radius: 1rem 0 0 1rem;
+    border-left: 1.5px solid var(--white);
+    right: 0;
   }
 
   .intro {

@@ -1,0 +1,26 @@
+.work-item {
+  display: flex;
+  height: 400px;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 4rem 2rem;
+  margin-block: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  color: var(--white);
+}
+
+.work-item h3 {
+  text-transform: none;
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  font-weight: 500;
+  color: var(--white);
+  margin-block: 0.5rem;
+}
+
+.work-item p:last-of-type {
+  font-weight: 400;
+  font-size: 0.9rem;
+}

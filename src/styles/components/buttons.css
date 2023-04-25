@@ -11,6 +11,7 @@
 .link-white,
 .link-blue {
   transition: 150ms ease-in;
+  display: inline-block;
 }
 
 .link-primary::after {

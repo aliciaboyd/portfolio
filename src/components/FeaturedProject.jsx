@@ -14,7 +14,7 @@ export default function FeaturedProject(props) {
         backgroundImage: `url(${backgroundImageURL})`,
       }}
     >
-      <div>
+      <div className="wrap">
         <p className="feature-title">{props.title}</p>
         {props.casestudy && (
           <Link className="link-white" to={`/${props.casestudy}`}>
@@ -29,6 +29,7 @@ export default function FeaturedProject(props) {
         >
           Github Repo
         </a>
+        {window.innerWidth < "500" && <br />}
         <a
           className="link-white"
           href={props.demo}
